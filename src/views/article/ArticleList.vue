@@ -288,7 +288,6 @@
             type="primary"
             size="mini"
             @click="editArticle(scope.row.id)"
-            v-if="scope.row.isDelete == 0"
           >
             编辑
           </el-button>
@@ -296,7 +295,6 @@
             title="确定删除吗？"
             style="margin-left:10px"
             @confirm="updateArticleDelete(scope.row.id)"
-            v-if="scope.row.isDelete == 0"
           >
             <el-button size="mini" type="danger" slot="reference">
               删除
