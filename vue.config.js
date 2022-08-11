@@ -1,9 +1,10 @@
 module.exports = {
+  publicPath: "/back",
   productionSourceMap: false,
   devServer: {
     proxy: {
       "/api": {
-        target: "http://localhost:3000",
+        target: "http://localhost:8887",
         changeOrigin: true,
         pathRewrite: {
           "^/api": ""
